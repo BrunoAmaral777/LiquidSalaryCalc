@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/tv_title_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center_horizontal"
+        android:text="Resultado"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_res_gross_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_result"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:text="Salário Bruto"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_res_inss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_gross_salary"
+        android:layout_alignParentStart="true"
+        android:text="INSS"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_res_irrf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_inss"
+        android:layout_alignParentStart="true"
+        android:text="IRRF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_res_other_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_irrf"
+        android:layout_alignParentStart="true"
+        android:text="Outros Descontos"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_res_calc_gross_sal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_result"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:text="Resultado"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_res_calc_inss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_calc_gross_sal"
+        android:layout_alignParentEnd="true"
+        android:text="Resultado"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_res_calc_irrf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_calc_inss"
+        android:layout_alignParentEnd="true"
+        android:text="Resultado"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_res_calc_other_disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_calc_irrf"
+        android:layout_alignParentEnd="true"
+        android:text="Resultado"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_res_net_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_other_discount"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp"
+        android:text="Salário Líquido"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_res_calc_net_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_other_discount"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="64dp"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_res_calc_discounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_calc_net_salary"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_res_discounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_net_salary"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:text="Descontos"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_result_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_res_discounts"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Voltar"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:padding="24dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title_application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center_horizontal"
+        android:text="Calculadora de Salário Líquido"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_gross_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@id/et_gross_salary"
+        android:layout_alignBottom="@id/et_gross_salary"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Salário Bruto R$"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_dependent_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/et_dependent_number"
+        android:layout_alignBottom="@id/et_dependent_number"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Número Dependentes"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_other_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/et_other_discount"
+        android:layout_alignBottom="@id/et_other_discount"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Outros Descontos R$"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_gross_salary"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_application"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="0,00"
+        android:inputType="numberDecimal"
+        android:paddingEnd="24dp"
+        android:textAlignment="viewEnd" />
+
+    <EditText
+        android:id="@+id/et_dependent_number"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_gross_salary"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:text="0"
+        android:inputType="number"
+        android:paddingEnd="24dp"
+        android:textAlignment="viewEnd" />
+
+    <EditText
+        android:id="@+id/et_other_discount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_dependent_number"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="0,00"
+        android:inputType="numberDecimal"
+        android:paddingEnd="24dp"
+        android:textAlignment="viewEnd" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_other_discount"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="64dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Calcular"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
